@@ -106,6 +106,7 @@ nav #vlog{
     right: 0rem;
     top: 10vh;
     border-bottom-left-radius: 50rem;
+    display: none;
 }
 
 #hamb li{
