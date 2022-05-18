@@ -1,0 +1,9 @@
+@media only screen and (max-width: 900px) 
+{
+    #nav_horz{
+        display: none;
+    }
+    #bars{
+        display: unset;
+    }
+}
