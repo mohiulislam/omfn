@@ -1,0 +1,19 @@
+@media only screen and (max-width: 900px) 
+{
+    #nav_horz{
+        display: none;
+    }
+    #bars{
+        display: unset;
+    }
+}
+@media only screen and (min-width: 900px){
+    #hamb{
+        display: none;
+    }
+}
+@media only screen and (min-width: 680px){
+    nav #munna ,#vlog{
+        font-size: 26rem;
+    }
+}
