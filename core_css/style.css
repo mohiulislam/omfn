@@ -3,7 +3,8 @@
 }
 body{
     margin: 0;
-    background: rgb(216, 216, 216);
+    background: rgb(135, 141, 140);
+    overflow: hidden;
 }
 html{
     font-size:6.25%;
@@ -68,14 +69,14 @@ nav #nav_horz li::after{
 nav #nav_horz li:hover::after{
     left: 50%;
 }
-nav #logo{
+#logo_box{
     color: rgb(39, 7, 7);
-    font-size: 30rem;
     position: absolute;
-    left: 0rem;
+    left: 0;
     background-color: white;
     height: 100%;
-    width: 250rem;
+    width: 30%;
+    max-width: 200rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,11 +86,18 @@ nav #logo{
 nav #munna{
     color: rgba(0, 195, 255, 0.888);
     font-family: 'Coiny', cursive;
-    margin-right: 10px;
+   
+}
+nav #munna ,#vlog{
+    font-size: 4vw;
 }
 nav #vlog{
     font-family: 'Coiny', cursive;
     color: rgba(233, 10, 58, 0.888);
+    margin-left: 5%;
+}
+#a{
+    width: 100%;
 }
 #bars{
     font-size: 28rem;
@@ -100,13 +108,16 @@ nav #vlog{
 /* hamb */
 #hamb{
     background: rgba(0, 0, 0, 0.685);
-    height: auto;
-    width: 200rem;
+    width: 180rem;
     position: absolute;
-    right: 0rem;
+    right: -200rem;
     top: 10vh;
-    border-bottom-left-radius: 50rem;
-    display: none;
+    border-bottom-left-radius: 10rem;
+    transition: all .4s;
+}
+.hamb_apear{
+    right: 0 !important;
+    transition: all .4;
 }
 
 #hamb li{
@@ -117,9 +128,10 @@ nav #vlog{
     color: rgba(255, 255, 255, 0.37);
     border-top: solid 2px rgb(0, 0, 0);
     width: 100%;
-    padding: 20rem;
+    padding: 15rem;
     transition: color .5s;
 }
+
 #hamb li:first-child{
     border-top: unset;
 }
